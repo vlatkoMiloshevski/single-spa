@@ -1,0 +1,23 @@
+{
+    "extends": "../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "appngrx",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "appngrx",
+            "kebab-case"
+        ],
+        "ordered-imports": [
+            true,
+            {
+                "named-imports-order": "lowercase-last"
+            }
+        ]
+    }
+}
