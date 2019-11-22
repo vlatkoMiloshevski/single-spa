@@ -82,7 +82,7 @@ module.exports = function (env) {
             rules: [
                 {
                     test: /\.html$/,
-                    loader: "raw-loader"
+                    loader: "html-loader"
                 },
                 {
                     test: /\.css$/,

@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "single-spa-vue": "^1.1.0",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-loader": "~15.7.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",

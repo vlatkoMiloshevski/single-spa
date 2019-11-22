@@ -41,6 +41,8 @@
     "@angular/router": "^6.1.2",
     "core-js": "^2.5.7",
     "es6-promise": "^4.2.4",
+    "html-loader": "~0.5.5",
+    "raw-loader": "~3.1.0",
     "redux": "^4.0.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2"

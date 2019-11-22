@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa": "ng build --prod --deploy-url http://localhost:9007/",
-    "serve:single-spa": "ng serve --disable-host-check --port 9007 --deploy-url http://localhost:9007/ --live-reload false"
+    "build:portal": "ng build --prod --deploy-url http://localhost:9007/",
+    "watch:portal": "ng serve --disable-host-check --port 9007 --deploy-url http://localhost:9007/ --live-reload false"
   },
   "private": true,
   "dependencies": {

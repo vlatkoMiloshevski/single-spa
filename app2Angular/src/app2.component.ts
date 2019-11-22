@@ -6,37 +6,8 @@ import * as angularImg from "../assets/angular-logo.png";
 
 @Component({
 	selector: 'app2',
-	template: `
-		<div style="margin-top: 100px;">
-            <img [src]="angularImg" style="width: 100px;"/> <br />
-			This was rendered by App2 which is written in Angular 6
-		</div>
-        <br />
-
-        <div>
-            <b> Count: {{ count }}</b><br/><br/>
-            <button (click)="increment()">local increment</button>&nbsp;Send a <b>local</b> increment event. This will
-            only increase the counter for the current app. <br/>
-            
-            <button (click)="decrement()">local decrement</button>&nbsp;Send a <b>local</b> decrement event. This will
-            only decrement the counter for the current app. <br/>
-
-            
-            <button (click)="globalIncrement()">global increment</button>&nbsp;Send a <b>global</b> increment event.
-            This will increase the counter for the current app and all other apps that listen to this event. <br/>
-            
-            <button (click)="globalDecrement()">global decrement</button>&nbsp;Send a <b>global</b> decrement event.
-            This will increase the counter for the current app and all other apps that listen to this event. <br/>
-        </div>
-		
-        <br />
-		<a [routerLink]="['/subroute1']" routerLinkActive="active">Angular route 1</a>&nbsp;
-		<a [routerLink]="['/subroute2']" routerLinkActive="active">Angular route 2</a>&nbsp;
-		<a href="#/appngrx/movies">NGRX movies</a>&nbsp;
-		<a href="#/appngrx/covers">NGRX covers</a>
-
-		<router-outlet></router-outlet>
-	`,
+    templateUrl: './app2.component.html',
+    // styleUrls: ['./app.component.css'],
 })
 export class App2 {
     count: number;
