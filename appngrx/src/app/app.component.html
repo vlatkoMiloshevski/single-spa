@@ -1,7 +1,10 @@
 <div style="text-align: center; margin-top: 100px">
-  <h1>
-    Welcome
-  </h1>
+
+  <button (click)="increment()">increment</button>
+  <button (click)="decrement()">decrement</button>
+  <button (click)="globalIncrement()">globalIncrement</button>
+  <button (click)="globalDecrement()">globalDecrement</button>
+  <div>{{count}}</div>
   <div class="topnav">
     <a routerLink="/movies">Movies</a>
     <a routerLink="/covers">Covers</a>

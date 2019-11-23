@@ -7,7 +7,6 @@ import * as angularImg from "../assets/angular-logo.png";
 @Component({
 	selector: 'app2',
     templateUrl: './app2.component.html',
-    // styleUrls: ['./app.component.css'],
 })
 export class App2 {
     count: number;

@@ -1,9 +1,9 @@
-import 'core-js/es7/reflect';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {enableProdMode} from '@angular/core';
-import {MainModule} from './main-module';
-import {environment} from '../environments/environment';
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { Router } from '@angular/router';
+import 'core-js/es7/reflect';
+import { environment } from '../environments/environment';
+import { MainModule } from './main-module';
 
 if (environment.production) {
     enableProdMode();

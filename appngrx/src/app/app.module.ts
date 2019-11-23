@@ -1,6 +1,7 @@
+import { NgRedux, NgReduxModule } from '@angular-redux/store';
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { Inject, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,15 +10,16 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { CounterActions, IAppState } from '../store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoversModule } from './covers/cover.module';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
+import { Globals } from './globals.service';
 import { MoviesModule } from './movies/movie.module';
 import { ApiService } from './services/api-service';
 import { ErrorService } from './services/error-handler.service';
 import { MaterialModule } from './shared/material.module';
-
 
 @NgModule({
   declarations: [
@@ -41,12 +43,26 @@ import { MaterialModule } from './shared/material.module';
     StoreRouterConnectingModule.forRoot(),
     FormsModule,
     MoviesModule,
-    CoversModule
+    CoversModule,
+    NgReduxModule,
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/appngrx' },
     ErrorService,
-    ApiService],
+    ApiService,
+    CounterActions,
+    Globals,
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(
+    private ngRedux: NgRedux<IAppState>,
+    private globals: Globals,
+    @Inject('localStoreRef') private localStoreRef: any,
+    @Inject('globalEventDispatcherRef') private globalEventDispatcherRef: any
+  ) {
+    this.ngRedux.provideStore(localStoreRef);
+    this.globals.globalEventDistributor = globalEventDispatcherRef;
+  }
+}

@@ -25,7 +25,7 @@ export default class Root extends React.Component {
                 <Provider store={this.state.store}>
                     <div style={{marginTop: 100}}>
                         <img src={reactLogo} style={{width: 100}}/> <br />
-                        This was rendered by App1, which is written in React.
+                        This application is written in React.
                         <Counter globalEventDistributor={this.state.globalEventDistributor}/>
                     </div>
                 </Provider>

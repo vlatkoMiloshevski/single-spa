@@ -1,23 +1,15 @@
 <div style="margin-top: 100px;">
     <img [src]="angularImg" style="width: 100px;" /> <br />
-    This was rendered by App2 which is written in Angular 6
+    This application is written in Angular 6
 </div>
 <br />
 
 <div>
-    <b> Count: {{ count }}</b><br /><br />
-    <button (click)="increment()">local increment</button>&nbsp;Send a <b>local</b> increment event. This will
-    only increase the counter for the current app. <br />
-
-    <button (click)="decrement()">local decrement</button>&nbsp;Send a <b>local</b> decrement event. This will
-    only decrement the counter for the current app. <br />
-
-
-    <button (click)="globalIncrement()">global increment</button>&nbsp;Send a <b>global</b> increment event.
-    This will increase the counter for the current app and all other apps that listen to this event. <br />
-
-    <button (click)="globalDecrement()">global decrement</button>&nbsp;Send a <b>global</b> decrement event.
-    This will increase the counter for the current app and all other apps that listen to this event. <br />
+    <b> EMOTICONS: {{ count }}</b> <br />
+    <button style="cursor:pointer" (click)="increment()">😊</button>&nbsp;&nbsp;👍 <br />
+    <button style="cursor:pointer" (click)="decrement()">😕</button>&nbsp;&nbsp;👎 <br />
+    <button style="cursor:pointer" (click)="globalIncrement()">😍</button>&nbsp;&nbsp;👍 <br />
+    <button style="cursor:pointer" (click)="globalDecrement()">😏</button>&nbsp;&nbsp;👎 <br />
 </div>
 
 <br />
