@@ -1,10 +1,13 @@
 <div style="text-align: center; margin-top: 100px">
 
-  <button (click)="increment()">increment</button>
-  <button (click)="decrement()">decrement</button>
-  <button (click)="globalIncrement()">globalIncrement</button>
-  <button (click)="globalDecrement()">globalDecrement</button>
-  <div>{{count}}</div>
+  <div>
+    <b> LIKES: {{ count }}</b> <br />
+    <button style="cursor:pointer" (click)="increment()">LOCAL STATE</button>&nbsp;&nbsp;👍 <br />
+    <button style="cursor:pointer" (click)="decrement()">LOCAL STATE</button>&nbsp;&nbsp;👎 <br />
+    <button style="cursor:pointer" (click)="globalIncrement()">GLOBAL STATE</button>&nbsp;&nbsp;👍 <br />
+    <button style="cursor:pointer" (click)="globalDecrement()">GLOBAL STATE</button>&nbsp;&nbsp;👎 <br />
+  </div> 
+
   <div class="topnav">
     <a routerLink="/movies">Movies</a>
     <a routerLink="/covers">Covers</a>

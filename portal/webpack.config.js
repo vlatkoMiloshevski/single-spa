@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	entry: {
-		main: 'src/portal.js',
+        main: 'src/portal.js',
 	},
 	output: {
 		publicPath: '',

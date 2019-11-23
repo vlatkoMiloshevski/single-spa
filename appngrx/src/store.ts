@@ -1,4 +1,5 @@
-import {Action, createStore, Store} from 'redux';
+import { Action, Store, createStore } from 'redux';
+
 
 export interface IAppState {
     count: number;

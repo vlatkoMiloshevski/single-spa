@@ -21,10 +21,10 @@ async function init() {
     loadingPromises.push(loadApp('app4', '/app4', '/app4/singleSpaEntry.js', null, null)); // does not have a store, so we pass null
 
     // app5: The URL "/app5/..." is being redirected to "http://localhost:9005/..." this is done by the webpack proxy (webpack.config.js)
-    // loadingPromises.push(loadApp('app5', '/app5', '/app5/singleSpaEntry.js', '/app5/store.js', globalEventDistributor));
+    loadingPromises.push(loadApp('app5', '/app5', '/app5/singleSpaEntry.js'));
 
     // app6: The URL "/app5/..." is being redirected to "http://localhost:9007/..." this is done by the angular.json (Angular CLI)
-    loadingPromises.push(loadApp('appngrx', '/appngrx', '/appngrx/main.js', '/app2/store.js', globalEventDistributor));
+    loadingPromises.push(loadApp('appngrx', '/appngrx', '/appngrx/main.js', '/app5/store.js', globalEventDistributor));
 
     // wait until all stores are loaded and all apps are registered with singleSpa
     await Promise.all(loadingPromises);

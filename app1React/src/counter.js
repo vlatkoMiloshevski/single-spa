@@ -24,11 +24,11 @@ class Counter extends React.Component {
             <div>
                 <br />
                 <div>
-                    <b> EMOTICONS: {this.props.count}</b> <br />
-                    <button style={{ cursor: "pointer" }} onClick={this.increment}>😊</button>&nbsp;&nbsp;👍 <br />
-                    <button style={{ cursor: "pointer" }} onClick={this.decrement}>😕</button>&nbsp;&nbsp;👎 <br />
-                    <button style={{ cursor: "pointer" }} onClick={this.globalIncrement}>😍</button>&nbsp;&nbsp;👍 <br />
-                    <button style={{ cursor: "pointer" }} onClick={this.globalDecrement}>😏</button>&nbsp;&nbsp;👎 <br />
+                    <b> LIKES: {this.props.count}</b> <br />
+                    <button style={{ cursor: "pointer" }} onClick={this.increment}>LOCAL STATE</button>&nbsp;&nbsp;👍 <br />
+                    <button style={{ cursor: "pointer" }} onClick={this.decrement}>LOCAL STATE</button>&nbsp;&nbsp;👎 <br />
+                    <button style={{ cursor: "pointer" }} onClick={this.globalIncrement}>GLOBAL STATE</button>&nbsp;&nbsp;👍 <br />
+                    <button style={{ cursor: "pointer" }} onClick={this.globalDecrement}>GLOBAL STATE</button>&nbsp;&nbsp;👎 <br />
                 </div>
 
             </div>

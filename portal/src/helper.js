@@ -7,11 +7,11 @@ export function hashPrefix(prefix) {
 }
 
 export async function loadApp(name, hash, appURL, storeURL, globalEventDistributor) {
-    let storeModule = {}, customProps = {globalEventDistributor: globalEventDistributor};
+    let storeModule = {}, customProps = { globalEventDistributor: globalEventDistributor };
 
     // try to import the store module
     try {
-        storeModule = storeURL ? await SystemJS.import(storeURL) : {storeInstance: null};
+        storeModule = storeURL ? await SystemJS.import(storeURL) : { storeInstance: null };
     } catch (e) {
         console.log(`Could not load store of app ${name}.`, e);
     }
