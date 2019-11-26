@@ -72,9 +72,8 @@ module.exports = function (env) {
             store: 'src/store.ts'
         },
         output: {
-
             filename: '[name].js',
-            path: path.resolve(__dirname, 'release'),
+            path: path.resolve(__dirname, '../portal/release/app2'),
             libraryTarget: 'umd',
             library: 'app2'
         },

@@ -1,0 +1,36 @@
+{
+  "hosting": {
+    "public": "release",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/app1/**",
+        "destination": "/release/app1/**"
+      },
+      {
+        "source": "/app2/**",
+        "destination": "/release/app2/**"
+      },
+      {
+        "source": "/app3/**",
+        "destination": "/release/app3/**"
+      },
+      {
+        "source": "/app4/**",
+        "destination": "/release/app4/**"
+      },
+      {
+        "source": "/app5/**",
+        "destination": "/release/app5/**"
+      },
+      {
+        "source": "/appngrx/**",
+        "destination": "/release/appngrx/**"
+      }
+    ]
+  }
+}

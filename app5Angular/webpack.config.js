@@ -73,7 +73,7 @@ module.exports = function (env) {
         },
         output: {
             filename: '[name].js',
-            path: path.resolve(__dirname, 'release'),
+            path: path.resolve(__dirname, '../portal/release/app5'),
             libraryTarget: 'umd',
             library: 'app5'
         },

@@ -8,7 +8,7 @@ module.exports = {
 
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'release'),
+        path: path.resolve(__dirname, '../portal/release/app1'),
         libraryTarget: 'amd',
         library: 'reactApp'
     },

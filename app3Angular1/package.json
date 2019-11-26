@@ -14,6 +14,8 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
+    "file-loader": "~1.1.11",
+    "url-loader": "~1.0.1",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.2"
   },

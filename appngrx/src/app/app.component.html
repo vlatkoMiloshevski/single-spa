@@ -2,11 +2,16 @@
 
   <div>
     <b> LIKES: {{ count }}</b> <br />
-    <button style="cursor:pointer" (click)="increment()">LOCAL STATE</button>&nbsp;&nbsp;👍 <br />
-    <button style="cursor:pointer" (click)="decrement()">LOCAL STATE</button>&nbsp;&nbsp;👎 <br />
-    <button style="cursor:pointer" (click)="globalIncrement()">GLOBAL STATE</button>&nbsp;&nbsp;👍 <br />
-    <button style="cursor:pointer" (click)="globalDecrement()">GLOBAL STATE</button>&nbsp;&nbsp;👎 <br />
-  </div> 
+    <button class="button-state" style="cursor:pointer" (click)="increment()">LOCAL STATE</button>&nbsp;&nbsp;👍 <br />
+    <button class="button-state" style="cursor:pointer" (click)="decrement()">LOCAL STATE</button>&nbsp;&nbsp;👎 <br />
+    <button class="button-state" style="cursor:pointer" (click)="globalIncrement()">GLOBAL STATE</button>&nbsp;&nbsp;👍
+    <br />
+    <button class="button-state" style="cursor:pointer" (click)="globalDecrement()">GLOBAL STATE</button>&nbsp;&nbsp;👎
+    <br />
+
+    <br />
+    <a href="#/app1">React</a>
+  </div>
 
   <div class="topnav">
     <a routerLink="/movies">Movies</a>

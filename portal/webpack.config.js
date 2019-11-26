@@ -56,7 +56,7 @@ module.exports = {
         proxy: {
             "/app1": {
                 target: "http://localhost:9006",
-                pathRewrite: {"^/app1" : ""}
+                pathRewrite: {"^/app1" : ""},
             },
             "/app2": {
                 target: "http://localhost:9002",

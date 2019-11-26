@@ -7,6 +7,5 @@ angular
         controllerAs: 'vm',
         controller() {
             const vm = this;
-
         },
     });
